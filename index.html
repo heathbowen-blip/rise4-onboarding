@@ -77,6 +77,16 @@
   .chip b{color:var(--teal-dark);margin-right:8px}
   .note{margin-top:24px;font-size:15px;color:#5a6067}
 
+  /* GUARANTEE */
+  .guarantee{padding:72px 0;background:var(--ink)}
+  .g-card{display:flex;gap:36px;align-items:center;background:var(--ink-2);border:1px solid var(--teal);border-radius:var(--radius);padding:40px 44px}
+  .g-badge{flex:0 0 auto;width:132px;height:132px;border-radius:50%;background:var(--teal);color:#06201f;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--font-display);text-transform:uppercase;line-height:.95;text-align:center}
+  .g-badge strong{font-size:56px;font-weight:800}
+  .g-badge span{font-size:20px;font-weight:700;letter-spacing:.04em}
+  .g-card h2{font-size:clamp(30px,4.5vw,46px);margin-bottom:10px}
+  .g-card p{color:#c3c9cf;font-size:17px;max-width:640px}
+  .g-fine{margin-top:12px;font-size:13px!important;color:var(--muted)!important}
+
   /* FORM */
   .form-section{background:var(--ink-2)}
   .form-head{text-align:center;margin:0 auto 40px}
@@ -91,6 +101,7 @@
 
   @media(max-width:820px){
     .steps,.split{grid-template-columns:1fr}
+    .g-card{flex-direction:column;text-align:center;padding:32px 24px}
     .split{gap:32px}
     .hero{min-height:auto;padding:72px 0 80px}
     .hero-bg{background:linear-gradient(180deg,rgba(11,12,14,.8),rgba(11,12,14,.92)),url("https://images.squarespace-cdn.com/content/v1/66194acd16a5e714c9adeb23/14e525f0-0cfb-42ff-9739-9ab9e4b94a9b/2024-10-23_Rise4HolladayOpening_Selects-17.png") center/cover no-repeat}
@@ -125,7 +136,7 @@
         <a href="#start" class="btn">Start your onboarding</a>
         <a href="#how" class="btn ghost">How it works</a>
       </div>
-      <p class="meta">Takes about 3 minutes. All levels welcome.</p>
+      <p class="meta">Takes about 3 minutes. All levels welcome. Backed by our 22-day money-back guarantee.</p>
     </div>
   </section>
 
@@ -178,6 +189,19 @@
         <p class="note">You'll also share your contact info, an emergency contact, preferred days and times, and anything we should know about injuries or health. The form ends with a short waiver and signature.</p>
       </div>
       <img src="https://images.squarespace-cdn.com/content/v1/66194acd16a5e714c9adeb23/f6e728c1-8ef8-4fd8-a573-ed514ba71daa/2022-12-3_Rise4IntensityChallenge-62.png" alt="Rise4 members training together" loading="lazy">
+    </div>
+  </section>
+
+  <section class="guarantee" aria-labelledby="g-title">
+    <div class="wrap">
+      <div class="g-card">
+        <div class="g-badge" aria-hidden="true"><strong>22</strong><span>Day</span></div>
+        <div>
+          <h2 id="g-title">Love it or get your money back</h2>
+          <p>If you're not satisfied with your results within 22 days, we'll refund you. No questions asked.</p>
+          <p class="g-fine">Guarantee period starts at your first session. Contact info@rise-4.com to request a refund.</p>
+        </div>
+      </div>
     </div>
   </section>
 
